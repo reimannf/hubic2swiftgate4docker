@@ -28,7 +28,7 @@ The main documentation can be found on [hubic2swiftgate](https://github.com/oder
 * [Register client]( https://github.com/oderwat/hubic2swiftgate#registering-the-client-with-your-hubic-account)
 
    http[s]://yourserver.com:80|443/register/?client=hubic&password=pwd_from_config.php
-5. Check Usage
+* Check Usage
 
    http[s]://yourserver.com:80|443/usage
 
