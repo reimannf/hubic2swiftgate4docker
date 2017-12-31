@@ -16,6 +16,9 @@ The Repo contains a [config-sample](config-sample) folder, which can be used as 
 * `ssl`: Put your `server.crt` and `server.key` here. Check that the vhost conf `001-hubic2swiftgate.conf` will use it accordingly.
 * `config.php`: Put you HubiC `client_id`, `client_secret` and `password` here. The password is bound to the fixed user `hubic` which is used from `hubic2swiftgate`.
 
+If you are facing issue with permissions from the container to host directory, change the ownership of that files:
+```chown -R 33:33 /path/to/config```
+
 ## Setup
 The main documentation can be found on [hubic2swiftgate](https://github.com/oderwat/hubic2swiftgate/blob/master/README.md)
 * [Setup HubiC]( https://github.com/oderwat/hubic2swiftgate#setting-things-up-in-you-hubic-account)
