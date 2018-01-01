@@ -24,5 +24,5 @@ RUN a2enmod rewrite && \
   a2enmod ssl
 
 # ports and volumes
-EXPOSE 80 443
+EXPOSE 443
 VOLUME /config

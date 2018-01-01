@@ -27,13 +27,13 @@ The main documentation can be found on [hubic2swiftgate](https://github.com/oder
    Put the values to `/path/to/config/config.php`
 * Starting the container image
 
-   `docker run -d --restart always -p 8080:80 -p 8443:443 -v /path/to/config:/config reimannf/hubic2swiftgate4docker`
+   `docker run -d --restart always -p 8443:443 -v /path/to/config:/config reimannf/hubic2swiftgate4docker`
 * [Register client]( https://github.com/oderwat/hubic2swiftgate#registering-the-client-with-your-hubic-account)
 
-   http[s]://yourserver.com:80|443/register/?client=hubic&password=pwd_from_config.php
+   http[s]://yourserver.com:8443/register/?client=hubic&password=pwd_from_config.php
 * Check Usage
 
-   http[s]://yourserver.com:80|443/usage
+   http[s]://yourserver.com:8443/usage
 
 ## Info
 * Why a docker volume?
