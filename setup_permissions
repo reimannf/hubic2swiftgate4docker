@@ -1,0 +1,22 @@
+#!/bin/sh
+
+if [ -n "$PGID" ]; then
+  groupmod -o -g "$PGID" www-data
+fi
+if [ -n "$PUID" ]; then
+  usermod -o -u "$PUID" www-data
+fi
+
+echo "
+User uid:    $(id -u www-data)
+User gid:    $(id -g www-data)
+-------------------------------------
+"
+
+chown -R www-data:www-data /config
+
+echo "
+/config:
+$(ls -l /config)
+-------------------------------------
+"
